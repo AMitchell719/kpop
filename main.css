@@ -1,0 +1,31 @@
+#main-nav {
+    display: inline;
+}
+
+li {
+    margin: 0px;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0px;
+    margin: 0px;
+    height: 54px;
+}
