@@ -17,5 +17,70 @@
         </nav>
         <h1> Welcome to the best KPOP Stars and Bands, where we take KPOP seriously!</h1>
         <p>This site is run by the most knowledgeable KPOP stars in the world! Who better to trust than us :)</p>
+    
+        <div align="center">
+            <table>
+                <tr>
+                    <td><img src="keeho1.jpg" /></td>
+                    <td><img src="keeho2.jpg" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"><span id="pic1">&nbsp;$79.99 (extra spicy!!)</span></td>
+                    <td><input type="checkbox"><span id="pic2">&nbsp;$59.99</span></td>
+                </tr>
+            </table>
+        </div>
+        <br /><br />
+        <div class="numbers">
+            <span class="number-one">1</span>
+            <span class="number-two">2</span>
+            <span class="number-three">3</span>
+        </div>
+        <br/>
+        <div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+        
+        <script>
+            let numberOne = document.querySelector('.number-one');
+            let numberTwo = document.querySelector('.number-two');
+            let numberThree = document.querySelector('.number-three');
+            let prevButton = document.querySelector('.previous');
+            let nextButton = document.querySelector('.next');
+
+            let step = 1;
+
+            const UpdateUI = function() {
+                if(step >= 1){
+                    numberOne.classList.add('active');
+                }
+
+                if(step >= 2){
+                    numberTwo.classList.add('active');
+                }
+                else if(step < 2){
+                    numberTwo.classList.remove('active');
+                }
+
+                if(step == 3){
+                    numberThree.classList.add('active');
+                }
+                else if(step < 3){
+                    numberThree.classList.remove('active');
+                }
+            }
+
+            prevButton.addEventListener('click', function(){
+                if(step > 1) step -= 1;
+                UpdateUI();
+            })
+
+            nextButton.addEventListener('click', function(){
+                if(step < 3) step += 1;
+                UpdateUI();
+            })
+
+        </script>
     </body>
 </html>

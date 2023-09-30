@@ -2,7 +2,69 @@
     display: inline;
 }
 
+.numbers {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.number-one {
+    padding: 15px;
+    
+}
+
+.number-two {
+    padding: 15px;
+    
+}
+
+.number-three {
+    padding: 15px;
+    
+}
+
+.active{
+    background-color: #7950F2;
+}
+
 li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color: white;
+    float: left;
+    text-decoration: none;
+    padding: 14px;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a:active {
+    background-color: gray;
+}
+
+table tr td img {
+    height: 400px;
+    width: 300px;
+}
+
+/* li {
     margin: 0px;
     float: left;
 }
@@ -28,4 +90,4 @@ ul {
     padding: 0px;
     margin: 0px;
     height: 54px;
-}
+} */
